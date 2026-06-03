@@ -10,7 +10,7 @@ CHAT_ID = "5155133339"
 
 LAST_EMAIL_FILE = "last_email.txt"
 
-creds = Credentials.from_authorized_user_file("token.json")
+creds = Credentials.from_authorized_user_file("/etc/secrets/token.json")
 service = build("gmail", "v1", credentials=creds)
 
 print("Bot Started...")
